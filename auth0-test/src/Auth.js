@@ -8,8 +8,8 @@ export default class Auth {
   expiresAt;
 
   auth0 = new auth0.WebAuth({
-    domain: process.env.AUTH_DOMAIN,
-    clientID: process.env.AUTH_CLIENT_ID,
+    domain: process.env.REACT_APP_AUTH_DOMAIN,
+    clientID: process.env.REACT_APP_AUTH_CLIENT_ID,
     // Will want this in a .env in deployment
     redirectUri: "http://localhost:3000/dashboard",
     responseType: "token id_token",
